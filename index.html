@@ -27,6 +27,9 @@ h1 {
 #photo {
     width: 90%;
     max-width: 350px;
+    height: auto;
+    max-height: 200px;   /* THIS is the vertical limiter */
+    object-fit: contain;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0,0,0,.3);
     margin: 0 auto 20px auto;
@@ -132,3 +135,4 @@ yesBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
