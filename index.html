@@ -75,7 +75,8 @@ button {
 <h1>Shagun, will you be my Valentine? ❤️</h1>
 
 <!-- CENTER IMAGE -->
-<img id="photo" src="https://raw.githubusercontent.com/sethritvikrs-code/Valentines/main/couple.png">
+<img id="photo" src="https://raw.githubusercontent.com/sethritvikrs-code/Valentines/main/couple.png" style="display:none;">
+
 
 <div id="buttons">
 <button id="yes">YES</button>
@@ -99,6 +100,8 @@ const yesBtn = document.getElementById("yes");
 const msg = document.getElementById("message");
 const gif = document.getElementById("gif");
 const buttons = document.getElementById("buttons");
+const photo = document.getElementById("photo");
+
 
 // Runaway NO
 function moveNo() {
@@ -118,10 +121,12 @@ yesBtn.addEventListener("click", () => {
     buttons.style.display = "none";
     msg.style.display = "block";
     msg.innerHTML = "💘 She said YES Balle Balle Shawa Shawa Chak De Fadde Napde Kille Subhe Jalandar te shaam ton Dilli 💘";
+    photo.style.display = "block";
     gif.style.display = "block";
 });
 </script>
 
 </body>
 </html>
+
 
